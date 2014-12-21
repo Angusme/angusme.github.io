@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	color: white;
+	font-style: italic;
+}
+
+/*Keyframes*/
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-color:#b4cfe0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+body {
+	background-color: #6b92b9; 
+	/* 雪花背景图片 */
+	background-image: url('../img/snow.png'), url('../img/snow3.png'), url('../img/snow2.png');
+	
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
+}
+
+#container {
+	width: 800px;
+	margin: 200px auto;
+	
+	text-align: center;
+	color: white;
+	font: 100px/1 'Spirax', cursive;
+	
+	text-shadow: 0px 0px 4px rgba(255,255,255, 0.5);
+}
+
+#container p {
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
